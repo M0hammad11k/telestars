@@ -18,35 +18,21 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     if query.data == 'premium':
         premium_text = "اکانت تلگرام پریمیوم"
-
-"
-        premium_text += "▫️ ۳ ماهه: ۱,۴۰۰,۰۰۰ تومان
-"
-        premium_text += "▫️ ۶ ماهه: ۱,۹۰۰,۰۰۰ تومان
-"
+        premium_text += "▫️ ۳ ماهه: ۱,۴۰۰,۰۰۰ تومان"
+        premium_text += "▫️ ۶ ماهه: ۱,۹۰۰,۰۰۰ تومان"
         premium_text += "▫️ یک ساله: ۳,۲۵۰,۰۰۰ تومان"
         await query.edit_message_text(premium_text, parse_mode='Markdown')
     
     elif query.data == 'stars':
-        stars_text = "⭐️ *لیست استارز*
-
-"
-        stars_text += "▫️ ۵۰ استارز: ۹۰,۰۰۰ تومان
-"
-        stars_text += "▫️ ۷۵ استارز: ۱۲۵,۰۰۰ تومان
-"
-        stars_text += "▫️ ۱۰۰ استارز: ۱۶۵,۰۰۰ تومان
-"
-        stars_text += "▫️ ۱۵۰ استارز: ۲۴۵,۰۰۰ تومان
-"
-        stars_text += "▫️ ۲۵۰ استارز: ۴۰۰,۰۰۰ تومان
-"
-        stars_text += "▫️ ۳۵۰ استارز: ۵۵۵,۰۰۰ تومان
-"
-        stars_text += "▫️ ۵۰۰ استارز: ۷۸۵,۰۰۰ تومان
-"
-        stars_text += "▫️ ۷۵۰ استارز: ۱,۱۸۰,۰۰۰ تومان
-"
+        stars_text = "⭐️ *لیست استارز*"
+        stars_text += "▫️ ۵۰ استارز: ۹۰,۰۰۰ تومان"
+        stars_text += "▫️ ۷۵ استارز: ۱۲۵,۰۰۰ تومان"
+        stars_text += "▫️ ۱۰۰ استارز: ۱۶۵,۰۰۰ تومان"
+        stars_text += "▫️ ۱۵۰ استارز: ۲۴۵,۰۰۰ تومان"
+        stars_text += "▫️ ۲۵۰ استارز: ۴۰۰,۰۰۰ تومان"
+        stars_text += "▫️ ۳۵۰ استارز: ۵۵۵,۰۰۰ تومان"
+        stars_text += "▫️ ۵۰۰ استارز: ۷۸۵,۰۰۰ تومان"
+        stars_text += "▫️ ۷۵۰ استارز: ۱,۱۸۰,۰۰۰ تومان"
         stars_text += "▫️ ۱۰۰۰ استارز: ۱,۵۷۰,۰۰۰ تومان"
         await query.edit_message_text(stars_text, parse_mode='Markdown')
 
