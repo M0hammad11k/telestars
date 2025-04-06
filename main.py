@@ -17,7 +17,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     
     if query.data == 'premium':
-        premium_text = "💎 *اکانت تلگرام پریمیوم*
+        premium_text = "اکانت تلگرام پریمیوم"
 
 "
         premium_text += "▫️ ۳ ماهه: ۱,۴۰۰,۰۰۰ تومان
